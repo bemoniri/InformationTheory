@@ -1,0 +1,26 @@
+\begin{thebibliography}{1}
+
+\bibitem{cellucci2005statistical}
+Qing Wang, Sanjeev~R Kulkarni, Sergio Verd{\'u}, et~al.
+\newblock Universal estimation of information measures for analog sources.
+\newblock {\em Foundations and Trends{\textregistered} in Communications and
+  Information Theory}, 5(3):265--353, 2009.
+
+\bibitem{wang2009universal}
+Christopher~J Cellucci, Alfonso~M Albano, and Paul~E Rapp.
+\newblock Statistical validation of mutual information calculations: Comparison
+  of alternative numerical algorithms.
+\newblock {\em Physical Review E}, 71(6):066208, 2005.
+
+\bibitem{petr}
+Georges~A Darbellay.
+\newblock Independent component analysis through direct estimation of the
+  mutual information.
+
+\bibitem{yeung2008blahut}
+Raymond~W Yeung.
+\newblock The blahut--arimoto algorithms.
+\newblock In {\em Information Theory and Network Coding}, pages 211--228.
+  Springer, 2008.
+
+\end{thebibliography}

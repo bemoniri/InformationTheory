@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{معرفی}{3}{0}{1}
+\beamer@sectionintoc {2}{انگیزه}{4}{0}{2}
+\beamer@sectionintoc {3}{مدل ریاضی}{10}{0}{3}
+\beamer@sectionintoc {4}{کابرد‌های چهارچوب معرفی شده}{11}{0}{4}
+\beamer@sectionintoc {5}{تصادفی‌سازی}{13}{0}{5}
+\beamer@sectionintoc {6}{پیشنهاد‌ها}{18}{0}{6}

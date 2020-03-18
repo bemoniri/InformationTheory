@@ -1,0 +1,38 @@
+\contentsline {section}{\numberline {1}مقدّمه}{3}{section.1}
+\contentsline {subsection}{\numberline {1‏.‏1}نمونه‌هایی از تحلیل تطبیقی داده}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1‏.‏2}مدل ریاضی تحلیل تطبیقی داده}{4}{subsection.1.2}
+\contentsline {subsection}{\numberline {1‏.‏3}کار‌های پیشین}{4}{subsection.1.3}
+\contentsline {section}{\numberline {2}کنترل‌کردن سوییدگی از راه محدودکردن استفاده از اطّلاعات}{4}{section.2}
+\contentsline {subsection}{\numberline {2‏.‏1}معرّفی یک کران بالا برای سوییدگی به وسیله‌ی اطّلاعات استفاده‌ شده}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2‏.‏2}اطّلاعات استفاده ‌شده، به عنوان کرانی برای بقیه‌ی معیارهای سوییدگی}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {2‏.‏3}اطّلاعات استفاده شده به عنوان یک کران پایین برای سوییدگی}{6}{subsection.2.3}
+\contentsline {section}{\numberline {3}چه زمانی سوییدگی بزرگ است؟}{7}{section.3}
+\contentsline {subsection}{\numberline {3‏.‏1}رتبه‌بندی با وجود سیگنال در داده‌ها}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3‏.‏2}تفکیک تقریباً مستقل داده‌های غیر \lr {i.i.d.} }{8}{subsection.3.2}
+\contentsline {section}{\numberline {4}محدود کردن سوییدگی با تصادفی‌سازی}{8}{section.4}
+\contentsline {subsection}{\numberline {4‏.‏1}رگولاریزیشن با انتخاب تصادفی}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4‏.‏2}تصادفی‌سازی در تحلیل‌های چند مرحله‌ای}{9}{subsection.4.2}
+\contentsline {section}{\numberline {5}پیشنهاد برای کار‌های آتی}{11}{section.5}
+\contentsline {section}{\numberline {آ‍}پیش‌نیازهای موردنیاز جهت فهم اثبات‌های قضایا}{13}{appendix.Alph1}
+\contentsline {subsection}{\numberline {آ‍‏.‏1}متغیّرهای تصادفی زیر--گاوسی}{13}{subsection.Alph1.1}
+\contentsline {subsection}{\numberline {آ‍‏.‏2}متغیّرهای تصادفی زیر--نمایی}{17}{subsection.Alph1.2}
+\contentsline {subsection}{\numberline {آ‍‏.‏3}بیان دیگری از فاصله‌ی \lr {KL}}{18}{subsection.Alph1.3}
+\contentsline {subsubsection}{\numberline {آ‍‏.‏3‏.‏1}اثبات قضیه‌ی \textup {\hbox {\mathsurround \z@ \normalfont \beginR (\ignorespaces \ref {thm_kldiv}\unskip \@@italiccorr )\endR }}}{18}{subsubsection.Alph1.3.1}
+\contentsline {section}{\numberline {ب}اثبات قضایای بیان‌شده}{19}{appendix.Alph2}
+\contentsline {subsection}{\numberline {ب‏.‏1}قضایای فصل \ref {bias_control}}{19}{subsection.Alph2.1}
+\contentsline {subsubsection}{\numberline {ب‏.‏1‏.‏1}اثبات قضیه‌ی \textup {\hbox {\mathsurround \z@ \normalfont \beginR (\ignorespaces \ref {mainthm}\unskip \@@italiccorr )\endR }}}{19}{subsubsection.Alph2.1.1}
+\contentsline {subsubsection}{\numberline {ب‏.‏1‏.‏2}اثبات قضیه‌ی \textup {\hbox {\mathsurround \z@ \normalfont \beginR (\ignorespaces \ref {mainthm_ext1}\unskip \@@italiccorr )\endR }}}{21}{subsubsection.Alph2.1.2}
+\contentsline {subsubsection}{\numberline {ب‏.‏1‏.‏3}اثبات قضیه‌ی \textup {\hbox {\mathsurround \z@ \normalfont \beginR (\ignorespaces \ref {mainthm_ext2}\unskip \@@italiccorr )\endR }}}{22}{subsubsection.Alph2.1.3}
+\contentsline {subsubsection}{\numberline {ب‏.‏1‏.‏4}اثبات قضیه‌ی \textup {\hbox {\mathsurround \z@ \normalfont \beginR (\ignorespaces \ref {mainthm_absbias}\unskip \@@italiccorr )\endR }}}{23}{subsubsection.Alph2.1.4}
+\contentsline {subsubsection}{\numberline {ب‏.‏1‏.‏5}اثبات قضیه‌ی \textup {\hbox {\mathsurround \z@ \normalfont \beginR (\ignorespaces \ref {squared_bias}\unskip \@@italiccorr )\endR }}}{24}{subsubsection.Alph2.1.5}
+\contentsline {subsubsection}{\numberline {ب‏.‏1‏.‏6}اثبات قضیه‌ی \textup {\hbox {\mathsurround \z@ \normalfont \beginR (\ignorespaces \ref {lower_bound}\unskip \@@italiccorr )\endR }}}{25}{subsubsection.Alph2.1.6}
+\contentsline {subsection}{\numberline {ب‏.‏2}اثبات قضایای فصل \ref {when_bias_large}}{27}{subsection.Alph2.2}
+\contentsline {subsubsection}{\numberline {ب‏.‏2‏.‏1}اثبات قضیه‌ی \textup {\hbox {\mathsurround \z@ \normalfont \beginR (\ignorespaces \ref {thm_classification}\unskip \@@italiccorr )\endR }}}{27}{subsubsection.Alph2.2.1}
+\contentsline {subsection}{\numberline {ب‏.‏3}اثبات قضایای فصل \ref {randomization}}{28}{subsection.Alph2.3}
+\contentsline {subsubsection}{\numberline {ب‏.‏3‏.‏1}اثبات لم \textup {\hbox {\mathsurround \z@ \normalfont \beginR (\ignorespaces \ref {lem_randomization}\unskip \@@italiccorr )\endR }}}{28}{subsubsection.Alph2.3.1}
+\contentsline {subsubsection}{\numberline {ب‏.‏3‏.‏2}اثبات قضیه‌ی \textup {\hbox {\mathsurround \z@ \normalfont \beginR (\ignorespaces \ref {thm_randgaussian}\unskip \@@italiccorr )\endR }}}{28}{subsubsection.Alph2.3.2}
+\contentsline {section}{\numberline {پ}برخی دیگر از کاربردهای مسئله‌ی کاهش سوییدگی از طریق کنترل اطّلاعات استفاده شده}{29}{appendix.Alph3}
+\contentsline {subsection}{\numberline {پ‏.‏1}فیلتر کردن به کمک آماره‌های حاشیه‌ای}{29}{subsection.Alph3.1}
+\contentsline {subsection}{\numberline {پ‏.‏2}استفاده‌کردن از اطّلاعات و مسئله‌ی طبقه‌بندی}{31}{subsection.Alph3.2}
+\contentsline {subsection}{\numberline {پ‏.‏3}مشاهده‌ی داده‌‌ها و تعداد کلاس‌ها در خوشه‌بندی}{32}{subsection.Alph3.3}
+\contentsline {subsection}{\numberline {پ‏.‏4}کنترل سوییدگی از طریق کنترل \lr {FDR} }{32}{subsection.Alph3.4}

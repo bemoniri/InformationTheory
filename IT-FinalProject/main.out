@@ -1,0 +1,38 @@
+\BOOKMARK [1][-]{section.1}{مقدّمه}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{نمونه‌هایی از تحلیل تطبیقی داده}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{مدل ریاضی تحلیل تطبیقی داده}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{کار‌های پیشین}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{کنترل‌کردن سوییدگی از راه محدودکردن استفاده از اطّلاعات}{}% 5
+\BOOKMARK [2][-]{subsection.2.1}{معرّفی یک کران بالا برای سوییدگی به وسیله‌ی اطّلاعات استفاده‌ شده}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.2}{اطّلاعات استفاده ‌شده، به عنوان کرانی برای بقیه‌ی معیارهای سوییدگی}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{اطّلاعات استفاده شده به عنوان یک کران پایین برای سوییدگی}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{چه زمانی سوییدگی بزرگ است؟}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{رتبه‌بندی با وجود سیگنال در داده‌ها}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.2}{تفکیک تقریباً مستقل داده‌های غیر i.i.d. }{section.3}% 11
+\BOOKMARK [1][-]{section.4}{محدود کردن سوییدگی با تصادفی‌سازی}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{رگولاریزیشن با انتخاب تصادفی}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.2}{تصادفی‌سازی در تحلیل‌های چند مرحله‌ای}{section.4}% 14
+\BOOKMARK [1][-]{section.5}{پیشنهاد برای کار‌های آتی}{}% 15
+\BOOKMARK [1][-]{appendix.Alph1}{پیش‌نیازهای موردنیاز جهت فهم اثبات‌های قضایا}{}% 16
+\BOOKMARK [2][-]{subsection.Alph1.1}{متغیّرهای تصادفی زیر–گاوسی}{appendix.Alph1}% 17
+\BOOKMARK [2][-]{subsection.Alph1.2}{متغیّرهای تصادفی زیر–نمایی}{appendix.Alph1}% 18
+\BOOKMARK [2][-]{subsection.Alph1.3}{بیان دیگری از فاصله‌ی KL}{appendix.Alph1}% 19
+\BOOKMARK [3][-]{subsubsection.Alph1.3.1}{اثبات قضیه‌ی \(آ‍‏.‏8\)}{subsection.Alph1.3}% 20
+\BOOKMARK [1][-]{appendix.Alph2}{اثبات قضایای بیان‌شده}{}% 21
+\BOOKMARK [2][-]{subsection.Alph2.1}{قضایای فصل 2}{appendix.Alph2}% 22
+\BOOKMARK [3][-]{subsubsection.Alph2.1.1}{اثبات قضیه‌ی \(2‏.‏1\)}{subsection.Alph2.1}% 23
+\BOOKMARK [3][-]{subsubsection.Alph2.1.2}{اثبات قضیه‌ی \(2‏.‏2\)}{subsection.Alph2.1}% 24
+\BOOKMARK [3][-]{subsubsection.Alph2.1.3}{اثبات قضیه‌ی \(2‏.‏3\)}{subsection.Alph2.1}% 25
+\BOOKMARK [3][-]{subsubsection.Alph2.1.4}{اثبات قضیه‌ی \(2‏.‏4\)}{subsection.Alph2.1}% 26
+\BOOKMARK [3][-]{subsubsection.Alph2.1.5}{اثبات قضیه‌ی \(2‏.‏5\)}{subsection.Alph2.1}% 27
+\BOOKMARK [3][-]{subsubsection.Alph2.1.6}{اثبات قضیه‌ی \(2‏.‏6\)}{subsection.Alph2.1}% 28
+\BOOKMARK [2][-]{subsection.Alph2.2}{اثبات قضایای فصل 3}{appendix.Alph2}% 29
+\BOOKMARK [3][-]{subsubsection.Alph2.2.1}{اثبات قضیه‌ی \(پ‏.‏2\)}{subsection.Alph2.2}% 30
+\BOOKMARK [2][-]{subsection.Alph2.3}{اثبات قضایای فصل 4}{appendix.Alph2}% 31
+\BOOKMARK [3][-]{subsubsection.Alph2.3.1}{اثبات لم \(4‏.‏1\)}{subsection.Alph2.3}% 32
+\BOOKMARK [3][-]{subsubsection.Alph2.3.2}{اثبات قضیه‌ی \(4‏.‏1\)}{subsection.Alph2.3}% 33
+\BOOKMARK [1][-]{appendix.Alph3}{برخی دیگر از کاربردهای مسئله‌ی کاهش سوییدگی از طریق کنترل اطّلاعات استفاده شده}{}% 34
+\BOOKMARK [2][-]{subsection.Alph3.1}{فیلتر کردن به کمک آماره‌های حاشیه‌ای}{appendix.Alph3}% 35
+\BOOKMARK [2][-]{subsection.Alph3.2}{استفاده‌کردن از اطّلاعات و مسئله‌ی طبقه‌بندی}{appendix.Alph3}% 36
+\BOOKMARK [2][-]{subsection.Alph3.3}{مشاهده‌ی داده‌‌ها و تعداد کلاس‌ها در خوشه‌بندی}{appendix.Alph3}% 37
+\BOOKMARK [2][-]{subsection.Alph3.4}{کنترل سوییدگی از طریق کنترل FDR }{appendix.Alph3}% 38

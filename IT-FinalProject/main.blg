@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: ieeetr-fa.bst
+Database file #1: references.bib
+-- ieeetr-fa.bst version 0.9 (2015/05/09) 
+-- This is a BibTeX style for XePersian: http://www.parsilatex.com
+Warning--empty journal in mohri2018foundations
+
+Done.
+You've used 6 entries,
+            2349 wiz_defined-function locations,
+            645 strings with 5596 characters,
+and the built_in function-call counts, 1950 in all, are:
+= -- 179
+> -- 59
+< -- 0
++ -- 22
+- -- 16
+* -- 136
+:= -- 247
+add.period$ -- 6
+call.type$ -- 6
+change.case$ -- 6
+chr.to.int$ -- 0
+cite$ -- 7
+duplicate$ -- 88
+empty$ -- 158
+format.name$ -- 16
+if$ -- 522
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 57
+newline$ -- 48
+num.names$ -- 6
+pop$ -- 14
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 63
+stack$ -- 0
+substring$ -- 136
+swap$ -- 39
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 4
+type$ -- 0
+warning$ -- 1
+while$ -- 18
+width$ -- 7
+write$ -- 82
+(There was 1 warning)

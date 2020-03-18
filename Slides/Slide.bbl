@@ -1,0 +1,24 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Russo and Zou}{Russo and
+  Zou}{2016}]{russo2016controlling}
+Russo, D. and J.~Zou (2016).
+\newblock Controlling bias in adaptive data analysis using information theory.
+\newblock In {\em Artificial Intelligence and Statistics}, pp.\  1232--1240.
+
+\bibitem[\protect\citeauthoryear{Russo and Zou}{Russo and Zou}{2019}]{zou}
+Russo, D. and J.~Zou (2019).
+\newblock How much does your data exploration overfit? controlling bias via
+  information usage.
+\newblock {\em IEEE Transactions on Information Theory\/}~{\em 66\/}(1),
+  302--323.
+
+
+\bibitem[\protect\citeauthoryear{Wainwright}{Wainwright}{2019}]{wainwright2019high}
+Wainwright, M.~J. (2019).
+\newblock {\em High-dimensional statistics: A non-asymptotic viewpoint},
+  Volume~48.
+\newblock Cambridge University Press.
+
+
+\end{thebibliography}

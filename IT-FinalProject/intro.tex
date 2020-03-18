@@ -1,0 +1,465 @@
+
+	
+	\chapter{مقدّمه}
+	
+	\chapter{ابزارهای لازم}
+	ابتدا لازم است با متغیّرهای تصادفی زیر--گاوسی و زیر--نمایی آشنا شویم و روابط مربوط به آن‌ها را بررسی کنیم. سپس یک تعبیر مفید و پرکاربرد از فاصله‌ی
+	\lr{KL}
+	را مشاهده می‌کنیم که در چند جای مقاله مورد استفاده قرار گرفته است.
+	\section{متغیّرهای تصادفی زیر--گاوسی}
+	\begin{den}
+		متغیّر تصادفی
+		\lr{$X$}
+		با میانگین
+		\lr{$\mu = \mathbb{E}[X]$}
+		را زیر--گاوسی می‌نامیم هرگاه عدد مثبتی مانند
+		\lr{$\sigma$}
+		وجود داشته باشد، به قسمی که برای هر
+		\lr{$\lambda\in\mathbb{R}$}
+		داشته باشیم:
+		\[\E\left[e^{\lambda(X-\mu)}\right]\leq e^{\frac{\sigma^2\lambda^2}{2}}\]
+	\end{den}
+	ثابت
+	\lr{$\sigma$}
+	را پارامتر این متغیّر تصادفی می‌نامیم. به عنوان مثال، یک متغیّر تصادفی گاوسی با واریانس
+	\lr{$\sigma^2$}،
+	خود یک متغیّر تصادفی زیر--گاوسی با پارامتر
+	\lr{$\sigma$}
+	است. هم‌چنین تعداد زیادی از متغیّرهای تصادفی غیر گاوسی، زیر--گاوسی هستند.
+	
+	\begin{thm}	\label{thm1subgaussian}
+		برای هر متغیّر تصادفی زیر--گاوسی 
+		\lr{$X$}
+		با متوسّط
+		\lr{$\mu = \E[X]$}
+		و پارامتر
+		\lr{$\sigma$}
+		داریم:
+		\begin{equation}
+		\Prob[|X-\mu|\geq t] \leq 2e^{-\frac{t^2}{2\sigma^2}}
+		\end{equation}
+	\end{thm}
+	\begin{proof}
+		از نامساوی مارکف می‌دانیم:
+		\[\Prob[X-\mu\geq t] = \Prob[e^{\lambda (X-\mu)} \geq e^{\lambda t}] \leq \frac{\E\left[e^{\lambda (X-\mu)}\right]}{e^{\lambda t}} \]
+		حال با توجّه به تعریف متغیّرهای تصادفی زیر--گاوسی داریم:
+		\[\Prob[X-\mu\geq t] \leq \frac{\E\left[e^{\lambda (X-\mu)}\right]}{e^{\lambda t}} \leq \exp(\frac{\sigma^2\lambda^2}{2} - \lambda t)\]
+		نامساوی بالا به ازای هر
+		\lr{$\lambda\in\R$}
+		برقرار است، من‌جمله
+		\lr{$\lambda$}ای
+		که طرف راست را کمینه کند. در نتیجه:
+		\begin{equation}
+		\Prob[X-\mu\geq t] \leq \inf_\lambda\left\{\exp(\frac{\sigma^2\lambda^2}{2} - \lambda t) \right\} = e^{-\frac{t^2}{2\sigma^2}}
+		\end{equation}
+		همچنین اگر متغیّر تصادفی
+		\lr{$X$}،
+		زیر--گاوسی باشد، 
+		\lr{$-X$}
+		هم زیر--گاوسی است و به طور مشابه، داریم:
+		\[\Prob[-X+\mu\geq t] = \Prob[X-\mu\leq -t]\leq  e^{-\frac{t^2}{2\sigma^2}}\]
+		و می‌توان نوشت:
+		\[\Prob[|X-\mu|\geq t] \leq \Prob[X-\mu\geq t] + \Prob[X-\mu\leq -t] \leq 2e^{-\frac{t^2}{2\sigma^2}}\]
+	\end{proof}
+	
+	متغیّرهای تصادفی زیر--گاوسی خواصّ گوناگونی دارند، تعدادی از این خواص را در قضایای بعدی مشاهده می‌کنیم.
+	
+	\begin{thm}\label{thm2subgaussian}
+		فرض کنید 
+		\lr{$X$}
+		یک متغیّر تصادفی زیر--گاوسی با امید ریاضی
+		\lr{$\E[X]=0$}
+		باشد، در این صورت اگر متغیّر تصادفی 
+		\lr{$Z$}
+		را به صورت
+		\lr{$Z\sim \Nd(0,2\sigma^2)$}
+		در نظر بگیریم، داریم:
+		\begin{equation}
+		\Prob[|X|\geq s] \leq \sqrt{8}e \Prob[|Z|\geq s] \qquad \forall s \geq 0
+		\label{thm2eq}
+		\end{equation}
+	\end{thm}
+	
+	\begin{proof}
+		از قضیه‌ی
+		\ref{thm1subgaussian}
+		داریم:
+		\[\Prob[X\geq t] \leq e^{-\frac{t^2}{2\sigma^2}}\qquad \forall t\geq0\]
+		و از طرف دیگر، با توجّه به کران
+		\lr{Mills ratio}
+		برای توزیع‌های گاوسی داریم:
+		\[\Prob[Z\geq t] \geq\left(\frac{\sqrt{2}\sigma}{t} - \frac{(\sqrt{2}\sigma)^3}{t^3} \right) e^{-\frac{t^2}{4\sigma^2}}\]
+		حال دو حالت زیر را در نظر می‌گیریم:
+		
+		حالتی که 
+		\lr{$t\in[0,2\sigma]$}
+		باشد. در این حالت، داریم:
+		\[\Prob[Z\geq t] \geq \Prob[Z\geq 2\sigma] = \left(\frac{1}{\sqrt{2}} - \frac{1}{2\sqrt{2}} \right) e^{-1} = \frac{1}{\sqrt{8}e}\]
+		و از آن‌جا که
+		\lr{$\Prob[X\geq t] \leq 1$}،
+		داریم:
+		\[\frac{\Prob[X\geq t]}{\Prob[Z\geq t]} \leq \sqrt{8}e\]
+		
+		
+		حالتی که
+		\lr{$t>2\sigma$}
+		باشد. در این حالت اگر کران
+		\lr{Mills ratio}
+		را با کران به دست آمده در قضیه‌ی
+		\ref{thm1subgaussian}
+		ترکیب کنیم و تعریف کنیم
+		\lr{$s = \frac{t}{\sigma}$}،
+		داریم:
+		\begin{flalign*}
+		\sup_{t>2\sigma} \frac{\Prob[X\geq t]}{\Prob[Z\geq t]} &\leq \sup_{s>2}\frac{e^{-\frac{s^2}{4}}}{\frac{\sqrt{2}}{s} - \frac{2\sqrt{2}}{s^3}}\\
+		&\leq \sup_{s>2} s^3 e^{-\frac{s^2}{4}}\\
+		&\leq \sqrt{8}e
+		\end{flalign*}
+		پس در هر دو حالت نامساوی
+		(\ref{thm2eq})
+		برقرار است.		
+	\end{proof}
+	
+	\begin{thm}\label{thm3subgaussian}
+		فرض کنید 
+		\lr{$X$}
+		یک متغیّر تصادفی با امید ریاضی
+		\lr{$\E[X]=0$}
+		باشد و بتوانیم عدد ثابتی مانند
+		\lr{$c$}
+		و یک متغیّر تصادفی
+		\lr{$Z\sim\Nd(0,\tau^2)$}
+		بیابیم، به قسمی که
+		\begin{equation}
+		\Prob[|X|\geq s] \leq c \Prob[|Z|\geq s] \qquad \forall s \geq 0
+		\end{equation}
+		در این صورت ثابتی مانند
+		\lr{$\theta\geq0$}
+		وجود دارد، به گونه‌ای که:
+		\begin{equation}
+		\E\left[X^{2k}\right] \leq \frac{(2k)!}{2^kk!}\theta^{2k}\qquad \forall k \in \mathbb{N}
+		\end{equation}
+	\end{thm}
+	\begin{proof}
+		اگر 
+		\lr{$Z \sim \mathcal{N}(0,\tau^2)$}
+		و
+		\lr{$X$}
+		یک متغیّر تصادفی باشد که در رابطه‌ی
+		\lr{$\Prob[|X|\geq s] \leq c \Prob[|Z|\geq s]$}
+		به ازای هر
+		\lr{$s\geq0$}
+		صدق کند، با توجّه به این‌که 
+		\lr{$X^{2k}$}
+		یک متغیّر تصادفی نامنفی است، می‌توان نوشت:
+		\begin{flalign*}
+		\E\left[X^{2k}\right] &= \int_{0}^{+\infty}\Prob[X^{2k}>s]ds\\
+		&= \int_{0}^{+\infty}\Prob[|X|>s^{\frac{1}{2k}}]ds\\
+		&\leq c \int_{0}^{+\infty}\Prob[|Z|>s^{\frac{1}{2k}}]ds\\
+		&= c \E\left[Z^{2k}\right]
+		\end{flalign*}
+		و از آن‌جا که متغیّر تصادفی
+		\lr{$Z$}،
+		گاوسی است، می‌دانیم:
+		\[ \E\left[Z^{2k}\right] = \frac{(2k)!}{2^kk!} \tau^{2k} \qquad \forall k\in \N\]
+		در نتیجه:
+		\begin{flalign*}
+		\E\left[X^{2k}\right] &\leq c \E\left[Z^{2k}\right]\\
+		&= c \frac{(2k)!}{2^kk!} \tau^{2k}\\
+		&\leq \frac{(2k)!}{2^kk!} (c\tau)^{2k}
+		\end{flalign*}
+		در نتیجه اگر قرار دهیم
+		\lr{$\theta = c\tau$}
+		به حکم می‌رسیم.
+	\end{proof}
+	\begin{thm}\label{thm4subgaussian}
+		فرض کنید 
+		\lr{$X$}
+		یک متغیّر تصادفی با امید ریاضی
+		\lr{$\E[X]=0$}
+		باشد و ثابتی مانند
+		\lr{$\theta \geq 0$}
+		وجود داشته باشد، به قسمی که:
+		\begin{equation}
+		\E\left[X^{2k}\right] \leq \frac{(2k)!}{2^kk!}\theta^{2k}\qquad \forall k \in \mathbb{N}
+		\end{equation}
+		در این صورت متغیّر تصادفی
+		\lr{$X$}،
+		زیرگاوسی با پارامتر
+		\lr{$\sigma = \theta\sqrt{2}$}
+		است.
+	\end{thm}
+	\begin{proof}
+		به ازای هر
+		\lr{$\lambda\in\R$}
+		داریم:
+		\[\E\left[e^{\lambda X}\right] \leq 1 + \sum_{k=2}^{\infty} \frac{|\lambda|^k\E\left[|X|^k\right]}{k!}\]
+		(جمله‌ی متناظر با
+		\lr{$k=1$}
+		به دلیل این‌که
+		\lr{$\E[X]=0$}
+		حذف شده است) اگر 
+		\lr{$X$}
+		حول صفر تقارن داشته باشد، جملات دارای
+		\lr{$k$}
+		فرد از بین می‌روند و داریم:
+		\[\E\left[e^{\lambda X}\right] \leq 1 + \sum_{k=1}^{\infty} \frac{\lambda^(2k)\E\left[|X|^k\right]}{(2k)!}\frac{(2k)!\theta^{2k}}{2^kk!} = e^{\frac{\lambda^2\theta^2}{2}}\]
+		که نتیجه می‌دهد 
+		\lr{$X$}
+		یک متغیّر تصادفی زیر--گاوسی با پارامتر
+		\lr{$\theta$}
+		است.
+		
+		\noindent
+		اگر
+		\lr{$X$}
+		متقارن نباشد، می‌توانیم یک کران بالا برای جملات مربوط به 
+		\lr{$k$}های
+		فرد بیابیم:
+		\begin{flalign*}
+		\E\left[|\lambda X|^{2k+1}\right]&\leq\sqrt{\E\left[|\lambda X|^{2k}\right]\E\left[|\lambda X|^{2k+2}\right]}\\
+		&\leq \frac{1}{2}\left(\lambda^{2k}\E\left[X^{2k}\right] + \lambda^{2k+2}\E\left[X^{2k+2}\right]\right)
+		\end{flalign*}
+		(نامساوی اوّل از نامساوی کوشی-شوارتز نتیجه می‌شود و نامساوی دوم از نامساوی میانگین حسابی--هندسی.) در نتیجه داریم:
+		\begin{flalign*}
+		\E\left[|\lambda X|^{2k+1}\right] &\leq 1 + \left(\frac{1}{2}+\frac{1}{2\times3!}\right)\lambda^2\E\left[X^2\right] +\\
+		&+ \sum_{k=2}^{\infty} \left(\frac{1}{(2k)!} + \frac{1}{2}\left[\frac{1}{(2k-1)!} + \frac{1}{(2k+1)!}\right]\right)\lambda^{2k}\E\left[X^{2k}\right]\\
+		&\leq \sum_{k=0}^{\infty} 2^k\frac{\lambda^{2k} \E\left[X^{2k}\right]}{(2k)!}\\
+		&\leq \sum_{k=0}^{\infty} 2^k\frac{\lambda^{2k}}{(2k)!} \frac{(2k)!\theta^{2k}}{2^kk!}\\
+		&= \exp(\frac{(\sqrt{2}\lambda\theta)^2}{2})
+		\end{flalign*}
+		که نتیجه می‌دهد 
+		\lr{$X$}
+		یک متغیّر تصادفی زیر--گاوسی با پارامتر
+		\lr{$\theta\sqrt{2}$}
+		است.
+	\end{proof}
+	\begin{thm}\label{thm5subgaussian}
+		فرض کنید 
+		\lr{$X$}
+		یک متغیّر تصادفی با امید ریاضی
+		\lr{$\E[X]=0$}
+		باشد و بتوانیم عدد ثابتی مانند
+		\lr{$c$}
+		و یک متغیّر تصادفی
+		\lr{$Z\sim\Nd(0,\tau^2)$}
+		بیابیم، به قسمی که
+		\begin{equation}
+		\Prob[|X|\geq s] \leq c \Prob[|Z|\geq s] \qquad \forall s \geq 0
+		\end{equation}
+		در این صورت 
+		\lr{$X$}
+		یک متغیّر تصادفی زیر--گاوسی با پارامتر
+		\lr{$\sqrt{2}c\tau$}
+		است.
+	\end{thm}
+	\begin{proof}
+		با توجّه به اینکه
+		\[\Prob[|X|\geq s] \leq c \Prob[|Z|\geq s] \qquad \forall s \geq 0\]
+		با استفاده از قضیه‌ی
+		\ref{thm3subgaussian}
+		داریم:
+		\[\E\left[X^{2k}\right] \leq \frac{(2k)!}{2^kk!}\theta^{2k}\qquad \forall k \in \mathbb{N}\]
+		که 
+		\lr{$\theta = c\tau$}.
+		حال با توجّه به قضیه‌ی
+		\ref{thm4subgaussian}
+		می‌توانیم نتیجه بگیریم که متغیّر تصادفی
+		\lr{$X$}،
+		یک متغیّر تصادفی زیر--گاوسی با پارامتر
+		\lr{$\sigma = \sqrt{2}\theta = \sqrt{2} c\tau$}
+		است.
+	\end{proof}
+	\begin{thm}\label{thm6subgaussian}
+		فرض کنید 
+		\lr{$X$}
+		یک متغیّر تصادفی زیر--گاوسی با امید ریاضی
+		\lr{$\E[X]=0$}
+		و پارامتر
+		\lr{$\sigma$}
+		باشد، در این صورت:
+		\begin{equation}
+		\E\left[e^{\frac{s X^2}{2\sigma^2}}\right] \leq \frac{1}{\sqrt{1-s}}\qquad \forall s \in [0,1)
+		\end{equation}
+	\end{thm}
+	\begin{proof}
+		درستی حکم برای 
+		\lr{$s=0$}
+		واضح است. برای 
+		\lr{$s\in(0,1)$}،
+		از آن‌جا که 
+		\lr{$X$}
+		یک متغیّر تصادفی زیر--گاوسی است، داریم:
+		\[\E\left[e^{\lambda X}\right]\leq e^{\frac{\lambda^2\sigma^2}{2}}\]
+		دو طرف نامساوی فوق را در 
+		\lr{$e^{-\frac{\lambda^2\sigma^2}{2s}}$}
+		ضرب می‌کنیم:
+		\[\E\left[e^{\lambda X - \frac{\lambda^2\sigma^2}{2s}}\right]\leq e^{\frac{\lambda^2\sigma^2(s-1)}{2s}}\]
+		از آن‌جا که رابطه‌ی اخیر به ازای هر
+		\lr{$\lambda\in\R$}
+		برقرار است، می‌توانیم از دوطرف آن روی
+		\lr{$\lambda$}
+		انتگرال بگیریم. انتگرال سمت راست نامساوی عبارت است از:
+		\[\int_{-\infty}^{\infty} \exp\left(\frac{\lambda^2\sigma^2(s-1)}{2s}\right)d\lambda = \frac{1}{\sigma}\sqrt{\frac{2\pi s}{1-s}}\]
+		و انتگرال سمت چپ نامساوی:
+		\begin{flalign*}
+		\int_{-\infty}^{\infty} \E\left[e^{\lambda X - \frac{\lambda^2\sigma^2}{2s}}\right] d\lambda &= \E\left[\int_{-\infty}^{\infty} e^{\lambda X - \frac{\lambda^2\sigma^2}{2s}} d\lambda\right]\\
+		&= \E\left[\frac{\sqrt{2\pi s}}{\sigma}e^{\frac{sX^2}{2\sigma^2}}\right]\\
+		&= \frac{\sqrt{2\pi s}}{\sigma} \E\left[e^{\frac{sX^2}{2\sigma^2}}\right]
+		\end{flalign*}
+		در نتیجه:
+		\begin{flalign*}
+		\E\left[e^{\frac{sX^2}{2\sigma^2}}\right] &= \frac{\sigma}{\sqrt{2\pi s}} \int_{-\infty}^{\infty} \E\left[e^{\lambda X - \frac{\lambda^2\sigma^2}{2s}}\right] d\lambda\\
+		&\leq \frac{\sigma}{\sqrt{2\pi s}} \int_{-\infty}^{\infty} \exp\left(\frac{\lambda^2\sigma^2(s-1)}{2s}\right)d\lambda\\
+		&= \frac{\sigma}{\sqrt{2\pi s}} \frac{1}{\sigma}\sqrt{\frac{2\pi s}{1-s}}\\
+		&= \frac{1}{\sqrt{1-s}}
+		\end{flalign*}
+	\end{proof}
+	\section{متغیّرهای تصادفی زیر--نمایی}
+	\begin{den}
+		متغیّر تصادفی
+		\lr{$X$}
+		با امید ریاضی
+		\lr{$\mu = \E[X]$}
+		را زیر--نمایی می‌نامیم اگر پارامترهای نامنفی
+		\lr{$(\nu,\alpha)$}
+		وجود داشته باشند، به قسمی که برای هر
+		\lr{$\lambda$}
+		که
+		\lr{$|\lambda|<\frac{1}{\alpha}$}
+		داشته باشیم:
+		\[\E\left[e^{\lambda(X-\mu)}\right]\leq e^{\frac{\nu^2\lambda^2}{2}}\]
+	\end{den}
+	از تعریف متغیّرهای تصادفی زیر--گاوسی و زیر--نمایی می‌توان نتیجه گرفت که هر متغیّر تصادفی زیر--گاوسی با پارامتر
+	\lr{$\sigma$}
+	زیر--نمایی هم هست با پارامترهای
+	\lr{$\nu=\sigma$}
+	و
+	\lr{$\alpha = 0$}،
+	ولی عکس آن الزاماً درست نیست.
+	
+	می‌توان قضیه‌ای مشابه قضیه‌ی
+	\ref{thm1subgaussian}
+	برای متغیّرهای تصادفی زیر--نمایی بیان کرد:
+	\begin{thm}
+		برای هر متغیّر تصادفی زیر--نمایی با متوسّط
+		\lr{$\mu = \E[X]$}
+		و پارامترهای
+		\lr{$\nu,\alpha$}
+		داریم:
+		\begin{equation}
+		\Prob[X-\mu\geq t] \leq \begin{cases}
+		e^{-\frac{t^2}{2\nu^2}} &  0\leq t \leq \frac{\nu^2}{\alpha}\\
+		e^{-\frac{t}{2\alpha}} &  t>\frac{\nu^2}{\alpha}\\
+		\end{cases}
+		\end{equation}
+	\end{thm}
+	\begin{proof}
+		از نامساوی مارکف می‌دانیم:
+		\[\Prob[X-\mu\geq t] = \Prob[e^{\lambda(X-\mu)}\geq e^{\lambda t}] \leq \frac{\E\left[e^{\lambda(X-\mu)}\right]}{e^{\lambda t}}\]
+		و در نتیجه با استفاده از تعریف متغیّرهای تصادفی زیر--گاوسی می‌توان نوشت:
+		\[\Prob[X-\mu\geq t] \leq \frac{\E\left[e^{\lambda(X-\mu)}\right]}{e^{\lambda t}} \leq \exp(\frac{\nu^2\lambda^2}{2} - \lambda t) \qquad \forall \lambda\in[0,\frac{1}{\alpha})\]
+		حال می‌خواهیم مقدار کمینه‌ی عبارت
+		\lr{$g(\lambda,t) = \frac{\nu^2\lambda^2}{2} - \lambda t$}
+		را محاسبه کنیم. مقدار کمینه‌ی این عبارت در
+		\lr{$\lambda^* = \frac{t}{\nu^2}$}
+		رخ می‌دهد. اگر داشته باشیم
+		\lr{$\frac{t}{\nu^2}\in[0,\frac{1}{\alpha})$}
+		و به تبع آن
+		\lr{$0\leq t\leq \frac{\nu^2}{\alpha}$}،
+		می‌توانیم
+		\lr{$\lambda^*$}
+		را به جای
+		\lr{$\lambda$}
+		قرار دهیم و در این صورت داریم:
+		\[\Prob[X-\mu\geq t]\leq e^{-\frac{t^2}{2\nu^2}}\]
+		اگر 
+		\lr{$t>\frac{\nu^2}{\alpha}$}
+		باشد، از آن‌جا که تابع
+		\lr{$g(.,t)$}
+		در بازه‌ی
+		\lr{$[0,\lambda^*]$}
+		به طور یکنوا کاهشی است، مقدار کمینه‌ی آن در مرز
+		\lr{$\lambda = \frac{1}{\alpha}$}
+		رخ می‌دهد، در نتیجه:
+		\[\Prob[X-\mu\geq t]\leq e^{-\frac{t}{\alpha} + \frac{1}{2\alpha}\frac{\nu^2}{\alpha}} \leq e^{-\frac{t}{\alpha} + \frac{1}{2\alpha}t} = e^{-\frac{t}{2\alpha}} \]
+	\end{proof}
+	\section{بیان دیگری از فاصله‌ی
+		\lr{KL}}
+	می‌دانیم فاصله‌ی
+	\lr{KL}
+	به صورت زیر تعریف می‌شود:
+	\begin{equation}
+	D_{KL}(p||q) = \sum_{x\in \mathcal{X}} p(x)\ln(\frac{p(x)}{q(x)})
+	\end{equation}
+	تعریف معادلی برای فاصله‌ی
+	\lr{KL}
+	در قضیه‌ی زیر بیان شده است:
+	\begin{thm}
+		فرض کنید 
+		\lr{$p(x)$}
+		و
+		\lr{$q(x)$}
+		دو توزیع روی الفبای یکسان
+		\lr{$\mathcal{X}$}
+		باشند. در این صورت می‌توان نوشت:
+		\begin{equation}
+		D_{KL}(p||q) = \sup_f \left\{\E_p[f(X)] - \ln \E_q[e^{f(X)}]\right\}
+		\end{equation}
+		که سوپریمم روی همه‌ی توابع
+		\lr{$f$}
+		گرفته می‌شود که در آن‌ها
+		\lr{$\E_p[f(X)]$}
+		و
+		\lr{$\E_q[e^{f(X)}]$}
+		خوش‌تعریف باشند.
+	\end{thm}
+	\begin{proof}
+		ابتدا فرض کنید تابع
+		\lr{$f$}
+		را به این صورت تعریف کنیم:
+		\[f(x) = \ln(\frac{p(x)}{q(x)}).\]
+		در این حالت مشاهده می‌کنیم که:
+		\begin{flalign*}
+		\E_p[f(X)] - \ln \E_q[e^{f(X)}] &= \sum_{x\in \mathcal{X}} p(x)\ln(\frac{p(x)}{q(x)}) - \ln(\sum_{x\in \mathcal{X}}q(x) \frac{p(x)}{q(x)})\\
+		&= \sum_{x\in \mathcal{X}} p(x)\ln(\frac{p(x)}{q(x)}) - \ln(1)\\
+		&= \sum_{x\in \mathcal{X}} p(x)\ln(\frac{p(x)}{q(x)}) = D_{KL}(p||q)
+		\end{flalign*}
+		در نتیجه:
+		\begin{flalign}\label{eq1proofthm331}
+		\sup_f \left\{\E_p[f(X)] - \ln \E_q[e^{f(X)}]\right\} &\geq \left[\E_p[f(X)] - \ln \E_q[e^{f(X)}] \right]_{f(x) = \ln(\frac{p(x)}{q(x)})}\notag\\
+		&= D_{KL}(p||q)
+		\end{flalign}
+		از طرف دیگر، داریم:
+		\begin{flalign*}
+		\E_p[f(X)] - \ln \E_q[e^{f(X)}] &= \E_p[f(X)] - \E_p[\ln \E_q[e^{f(X)}]]\\
+		&= \E_p\left[f(X) - {\ln \E_q[e^{f(X)}]}\right] \\
+		&= \E_p\left[\ln\frac{e^{f(X)}}{\E_q[e^{f(X)}]}\right]\\
+		&= \sum_{x\in \mathcal{X}} p(x) \ln \frac{e^{f(x)}}{\sum_{x'\in \mathcal{X}}q(x')e^{f(x')}}
+		\end{flalign*}
+		اگر توزیع
+		\lr{$q^{(f)}(x)$}
+		را به صورت زیر تعریف کنیم:
+		\[q^{(f)}(x) = \frac{q(x)e^{f(x)}}{\sum_{x'\in \mathcal{X}}q(x')e^{f(x')}}\]
+		می‌توانیم بنویسیم:
+		\begin{flalign*}
+		\E_p[f(X)] - \ln \E_q[e^{f(X)}] &= \sum_{x\in \mathcal{X}} p(x) \ln \frac{e^{f(x)}}{\sum_{x'\in \mathcal{X}}q(x')e^{f(x')}}\\
+		&= \sum_{x\in \mathcal{X}} p(x) \ln  \frac{q^{(f)}(x)}{q(x)}
+		\end{flalign*}
+		و در نتیجه:
+		\begin{flalign*}
+		D_{KL}(p||q) - \left(\E_p[f(X)] - \ln \E_q[e^{f(X)}] \right) &= \sum_{x\in \mathcal{X}} p(x)\ln(\frac{p(x)}{q(x)}) - \sum_{x\in \mathcal{X}} p(x) \ln  (\frac{q^{(f)}(x)}{q(x)})\\
+		&= \sum_{x\in \mathcal{X}} p(x) \ln(\frac{p(x)}{q^{(f)}(x)})\\
+		&= D_{KL}(p||q^{(f)}) \geq 0
+		\end{flalign*}
+		در نتیجه:
+		\begin{equation}\label{eq2proofthm331}
+		D_{KL}(p||q) \geq \sup_f \left\{\E_p[f(X)] - \ln \E_q[e^{f(X)}]\right\}
+		\end{equation}
+		و از مقایسه‌ی
+		(\ref{eq1proofthm331})
+		و
+		(\ref{eq2proofthm331})
+		داریم:
+		\[D_{KL}(p||q) = \sup_f \left\{\E_p[f(X)] - \ln \E_q[e^{f(X)}]\right\}\]
+	\end{proof}
